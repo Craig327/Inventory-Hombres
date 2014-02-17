@@ -6,5 +6,9 @@
     <string name="edit_message">Enter a message.</string>
     <string name="button_send">Send</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="button_inventory">Inventory</string>
+    <string name="button_load">Load</string>
+    <string name="button_upload">Upload</string>
+    <string name="button_edit">Add/Remove</string>
 	
 </resources>
