@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.inventoryhombres.TableSelect"
+            android:label="@string/title_activity_table_select" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryhombres.TablePopulate"
+            android:label="@string/title_activity_table_populate" >
+        </activity>
     </application>
 
 </manifest>
