@@ -33,14 +33,12 @@ public final class R {
     }
     public static final class menu {
         public static int main=0x7f070000;
-        public static int table_populate=0x7f070001;
-        public static int table_select=0x7f070002;
+        public static int table_select=0x7f070001;
     }
     public static final class string {
         public static int action_search=0x7f050007;
         public static int action_settings=0x7f050003;
         public static int app_name=0x7f050000;
-        public static int big_booties=0x7f05000c;
         public static int button_edit=0x7f05000b;
         public static int button_inventory=0x7f050008;
         public static int button_load=0x7f050009;
@@ -50,8 +48,8 @@ public final class R {
         public static int hello_world=0x7f050006;
         public static int title_activity_display_message=0x7f050005;
         public static int title_activity_main=0x7f050004;
-        public static int title_activity_table_populate=0x7f05000e;
-        public static int title_activity_table_select=0x7f05000d;
+        public static int title_activity_table_populate=0x7f05000d;
+        public static int title_activity_table_select=0x7f05000c;
     }
     public static final class style {
         /** 
