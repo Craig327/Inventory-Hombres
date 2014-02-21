@@ -21,6 +21,7 @@ with Eclipse.gitignore:
 .metadata
 bin/**
 tmp/**
+gen/**
 tmp/**/*
 *.tmp
 *.bak
