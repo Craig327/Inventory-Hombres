@@ -5,15 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical" 
     android:gravity="center_vertical" >
+
     <Button
+        android:id="@+id/inventorybutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_inventory" 
+        android:layout_marginBottom="20dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="to_table_view"/>
+        android:onClick="to_table_view"
+        android:text="@string/button_inventory" />
     
     <Button
         android:layout_width="match_parent"
