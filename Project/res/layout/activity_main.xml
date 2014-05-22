@@ -4,45 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:gravity="center_vertical" >
-
+    android:gravity="center_vertical" 
+    android:background="#000000"
+    >
     <Button
-        android:id="@+id/inventorybutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/button_inventory" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp"
-        android:onClick="to_table_view"
-        android:text="@string/button_inventory" />
+    	android:onClick = "launchInventory"
+    	android:textColor = "#000000"
+    	android:background = "@drawable/main_button" />
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_load"
+        android:text="@string/button_orders"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp" 
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:onClick="launchOrders"
+        android:textColor = "#000000"
+        android:background = "@drawable/main_button" />
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_upload"
+        android:text="@string/button_database"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp" 
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
-    
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_edit"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="launchDatabase"
+        android:textColor = "#000000"
+        android:background = "@drawable/main_button" />
      
-    
 </LinearLayout>

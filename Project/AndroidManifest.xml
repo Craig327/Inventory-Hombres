@@ -1,34 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.inventoryhombres"
+    package="com.example.inventoryapp"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
-
+	<uses-permission android:name="android.permission.INTERNET" />
+	   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	   <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+	   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:backupAgent="com.example.inventoryapp.DatabaseBackupAgent"
+        android:icon="@drawable/dos_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIUerU6Z9x6wS2PQCekbRpXB47CEJwC4fEmEwHjw" />
         <activity
-            android:name="com.example.inventoryhombres.MainActivity"
+            android:name="com.example.inventoryapp.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-		
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".TableSelect"  android:label="@string/title_activity_table_select" >
-            <intent-filter>
-                <action android:name="com.example.inventoryhombres.TableSelect" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-           
+            android:name="com.example.inventoryapp.InventoryActivity"
+            android:label="@string/title_activity_inventory" />
+        <activity
+            android:name="com.example.inventoryapp.TableView"
+            android:label="@string/title_activity_table_view" />
+        <activity
+            android:name="com.example.inventoryapp.Inventory_Count"
+            android:label="@string/title_activity_inventory__count" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.OrderEditActivity"
+            android:label="@string/title_activity_order_edit" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.EditItemActivity"
+            android:label="@string/title_activity_edit_item" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.ReceivedEditor"
+            android:label="@string/title_activity_received_editor" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.DatabaseItems"
+            android:label="@string/title_activity_database_items" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.Database_Item"
+            android:label="@string/title_activity_database__item" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.OrdersActivity"
+            android:label="@string/title_activity_orders" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.OrderNewActivity"
+            android:label="@string/title_activity_new_orders" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.DatabaseActivity"
+            android:label="@string/title_activity_database" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.NewItemActivity"
+            android:label="@string/title_activity_new_item" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.OrderOldActivity"
+            android:label="@string/title_activity_old_order" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.DateDialogActivity"
+            android:label="@string/title_activity_date_dialog"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.DeleteDialogActivity"
+            android:label="@string/title_activity_delete_dialog"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.LowerFragment"
+            android:label="@string/title_activity_lower_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.OrderReceivedActivity"
+            android:label="@string/title_activity_order_received" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.NewTableView"
+            android:label="@string/title_activity_new_table_view" >
+        </activity>
+        <activity
+            android:name="com.example.inventoryapp.New_Inventory_Count"
+            android:label="@string/title_activity_new__inventory__count" >
         </activity>
     </application>
 

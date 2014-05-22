@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Inventory Hombres</string>
-    <string name="edit_message">Enter a message</string>
+    <string name="app_name">Dos Inventory</string>
+    <string name="add_item">Enter an Item Name</string>
     <string name="button_send">Send</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
@@ -10,10 +10,122 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_search"></string>
     <string name="button_inventory">Inventory</string>
-    <string name="button_load">Load</string>
-    <string name="button_upload">Upload</string>
+    <string name="button_database">Database</string>
+    <string name="button_orders">Orders</string>
     <string name="button_edit">Edit</string>
-    <string name="title_activity_table_select">TableSelect</string>
-    <string name="title_activity_table_populate">TablePopulate</string>
+    <string name="title_activity_inventory">InventoryActivity</string>
+    <string name="button_add">add</string>
+    <string name="button_delete">delete</string>
+    <string name="hello">hello</string>
+    <string name="title_activity_table_view">TableView</string>
+    <string name="start_new_inventory">Start New Inventory</string>
+    <string name="start_new_order">Start New Order</string>
+    <string name="date_of_inventory">Date of Inventory:</string>
+    <string name="date_of_order">Date of Order:</string>
+    <string name="edit_date">Edit Date</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure">Are you sure you want to delete this?</string>
+    <string name="are_you_sure_lose_save">Are you sure you don\'t want to save this?</string>
+    <string name="cant_be_undone">*** This can not be undone ***</string>
+    <string name="action_bar_inventory">Inventory</string>
+    <string name="action_bar_order">Orders</string>
+    <string name="action_bar_new_inventory">New Inventory</string>
+    <string name="action_bar_new_order">New Order</string>
+    <string name="button_save">Save</string>
+    <string name="button_dont_save">Don\'t Save</string>
+    <string name="title_activity_inventory__count">Inventory ~ </string>
+    <string name="title_activity_order_edit">OrderEditActivity</string>
+    <string name="date_received">Date Received:</string>
+    <string name="title_activity_received_editor">ReceivedEditor</string>
+    <string name="title_activity_database_items">Database Items</string>
+    <string name="newdatabaseitem">New Database Item</string>
+    <string name="title_activity_database__item">Database_Item</string>
+    <string name="title_activity_orders">Orders</string>
+    <string name="title_activity_new_orders">New Order</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_dont_save">Don\'t Save</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_start">Start</string>
+    <string name="title_activity_todo_Detail">Order</string>
+    <string name="no_todos">Currently there are no Todo items maintained</string>
+    <string name="todo_summary">Summary</string>
+    <string name="todo_description">Delete Todo</string>
+    <string name="todo_edit_summary">Summary</string>
+    <string name="todo_edit_description">Description</string>
+    <string name="todo_edit_confirm">Confirm</string>
+    <string name="default_string">Default string</string>
+    <string name="title_activity_old_order">OldOrderActivity</string>
+    <string name="title_activity_database">DatabaseActivity</string>
+    <string name="title_activity_load_from_drive">LoadFromDriveActivity</string>
+    <string name="title_activity_retrieve_contents">RetrieveContentsActivity</string>
+    <string name="title_activity_display_text">DisplayTextActivity</string>
+    <string name="new_item">New Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="title_activity_new_item">NewItemActivity</string>
+    <string name="enter_id">Item ID</string>
+    <string name="enter_name">Name</string>
+    <string name="item_type">Select Item Type</string>
+    <string name="enter_supplier">Supplier</string>
+    <string name="enter_min">Minimum Stock</string>
+    <string name="enter_max">Maximum Stock</string>
+    <string name="save_button">Save</string>
+    <string name="select_supplier">Select Supplier</string>
+
+    <!-- Context Menu -->
+    <string name="menu_insert">Add Item</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_edit_date">Edit Date</string>
+    <string name="menu_edit_ordered">Edit Ordered</string>
+    <string name="menu_edit_received">Edit Received</string>
+    <string name="menu_edit_received_date">Edit Received Date</string>
+    <string name="menu_export_odered">Create Spreadsheet</string>
+
+    <!-- String for the select type spinner in new item -->
+    <string name="type1">Draft Beer</string>
+    <string name="type2">Bottle Beer</string>
+    <string name="type3">Tequila</string>
+    <string name="type4">Liquor (Non-Tequila)</string>
+    <string name="type5">Other</string>
+    <string name="title_activity_edit_item">Edit Item Activity</string>
+    <string name="title_activity_date_dialog">Date Dialog Activity</string>
+    <string name="title_activity_delete_dialog">Date Dialog Activity</string>
+
+    <!-- string array for the select supplier spinner in new item -->
+    <string name="supplier1">North</string>
+    <string name="supplier2">South</string>
+    <string name="supplier3">East</string>
+    <string name="supplier4">West</string>
+    
+    <!-- Columns for rows -->
+    <string name="col_on_date">on date</string>
+    <string name="col_received">received</string>
+    <string name="col_ordered">ordered</string>
+    <string name="col_num">num</string>
+    <string name="col_sug">sug</string>
+    <string name="col_inv">inv</string>
+    <string name="col_min">min</string>
+    <string name="col_max">max</string>
+    <string name="col_id">id</string>
+    <string name="col_name">name</string>
+    <string name="col_rec_num">rec</string>
+    <string name="col_date">date</string>
+    <string name="title_activity_lower_fragment">LowerFragment</string>
+    <string name="title_activity_order_received">OrderReceivedActivity</string>
+
+    <!-- Colors -->
+    <string name="color_list_group">#BA5928</string> <!-- dark orange from website -->
+    <string name="color_lower_title">#769945</string> <!-- green from website -->
+    <string name="color_lower_background">#FFFFA6</string> <!-- yellow -->
+    <string name="color_lower_count_box">#C1D17A</string> <!-- mid green/yellow -->
+
+
+    <!-- Colors from website not used yet -->
+    <string name="color_light_orange">#EB9B3A</string>
+    <string name="color_dark_brown">#342515</string>
+    <string name="color_yellow">#FFEE51</string>
+    <string name="color_yellowy_orange">#F9BA45</string>
+    <string name="title_activity_new_table_view">NewTableView</string>
+    <string name="title_activity_new__inventory__count">New_Inventory_Count</string>
 
 </resources>

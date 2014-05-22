@@ -1,0 +1,467 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inventoryapp.Inventory_Count"
+   android:orientation="vertical">
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:gravity="top" 
+        >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:background="#FFFFA6"
+        android:textColor="#000000"
+        >
+
+        <TextView
+            android:id="@+id/itemtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:background="#769945"
+            android:padding="5dp"
+            android:text="-----"
+            android:textColor="#000000"
+            />
+
+        <LinearLayout
+            android:id="@+id/number_keys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/decimal"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="."
+                android:textStyle="bold"
+                android:onClick="setCount" 
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/one"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/two"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/three"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/four"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/five"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/six"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/seven"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/eight"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/nine"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/zero"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" 
+                android:textStyle="bold"
+                android:onClick="setCount"
+                android:background="@drawable/buttons_num" 
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            android:textColor="#000000">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:textColor="#000000">
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Id: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/supplier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Supplier: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_supplier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/last_inventory_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inventory On: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_last_inventory_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/last_inventory_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inventory Count: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_last_inventory_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/last_order_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ordered On: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_last_order_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/last_order_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ordered: " 
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/text_last_order_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/countlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" 
+                android:background="#C1D17A">
+
+                <TextView
+                    android:id="@+id/countedlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Counted Today"
+                    android:textStyle="bold" 
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/countbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="none"
+                    android:textSize="60dp"
+                    android:textColor="#000000"/>
+					<!-- android:textIsSelectable="true"/>  
+					I Removed this line from the editText because it made the app crash on my phone-->
+                	
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" 
+                    >
+                    
+                    <LinearLayout
+                        android:id="@+id/acceptcount"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_redo"
+                        android:onClick="restorevalue"
+                        android:minHeight="30dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/redo" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/clearcount"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_redo"
+                        android:onClick="clearCount"
+                        android:minHeight="30dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sun" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

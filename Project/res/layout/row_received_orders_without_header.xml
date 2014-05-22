@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:minHeight="40dp" 
+    >
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:focusable="false"
+    />
+    <TextView
+        android:id="@+id/order_received"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center" 
+    />
+    <TextView
+        android:id="@+id/order_received_on"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center" 
+    />
+    <TextView
+        android:id="@+id/order_count"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center" 
+    />
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4" 
+        android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="6" 
+        android:gravity="center"
+    />
+    
+</LinearLayout>
+

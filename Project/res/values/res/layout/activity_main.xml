@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical" >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_inventory" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+    	android:onClick = "launchInventory" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_orders"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="launchOrders"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_database"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="launchDatabase"/>
+    
+</LinearLayout>
